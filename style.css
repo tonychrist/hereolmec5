@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#overlay-text {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#main-word {
+  font-size: 2rem;
+  transition: opacity 1s ease;
+}
+
+#meaning-text {
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#shape-container {
+  width: 90vw;
+  max-width: 600px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  clip-path: path("M250,20 C400,20 480,180 480,300 C480,450 400,580 250,580 C100,580 20,450 20,300 C20,180 100,20 250,20 Z");
+}
+
+.text-grid {
+  font-size: 10px;
+  line-height: 1.2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
